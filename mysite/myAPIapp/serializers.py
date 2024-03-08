@@ -257,7 +257,7 @@ class EnrollmentSerializer(serializers.ModelSerializer):
 
     student_info = serializers.SerializerMethodField()
     course_info = serializers.SerializerMethodField()
-    url = serializers.HyperlinkedIdentityField(view_name="student-detail")
+    # url = serializers.HyperlinkedIdentityField(view_name="student-detail")
 
     class Meta:
         """
